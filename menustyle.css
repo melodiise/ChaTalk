@@ -31,19 +31,22 @@ h2 {
   margin-top: 6%;
 }
 
-article {
+section {
     display: grid;
-    grid-template-columns: 10% 10% 10% 10%;
-    grid-template-rows: 5% 5% 5% 5%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
 }
 
+.type {
+    font-size: 18pt; 
+}
 
 .menu1 {
     display: flex;
     flex-direction: column;
     grid-row-start: 1;
-    grid-column-start: 2;
-    grid-column-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .item {
@@ -55,26 +58,23 @@ article {
 .menu2 {
     display: flex;
     flex-direction: column;
-    grid-column-start: 6;
-    grid-row-start: 12;
-}
-
-.type {
-    font-size: 18pt; 
+    grid-column-start: 4;
+   grid-column-end: 6;
+   grid-row-start: 2;
 }
 
 .menu3 {
     display: flex;
     flex-direction: column;
-    grid-column-start: 2;
-    grid-row-start: 14;
-    grid-column-end: 7;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-column-end: 3;
 }
-
 
 .menu4 {
     display: flex;
     flex-direction: column;
-    grid-column-start: 6;
-    grid-row-start: 15;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 4;
 }

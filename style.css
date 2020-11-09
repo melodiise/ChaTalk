@@ -25,17 +25,18 @@ a {
   text-decoration: none;
 }
 
-.welcome {
+.greeting {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
   margin-top: 6%;
   font-size: 26pt;
 }
 
-.chatalk {
-  display: flex;
-  justify-content: center;
-  font-size: 26pt;
+h2{
+  margin: 0;
 }
+
+
 
 
