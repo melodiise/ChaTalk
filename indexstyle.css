@@ -4,7 +4,6 @@ header {
   position: relative;
   justify-content: space-between;
   margin: 0 40px 0 40px;
-  border-bottom: solid rgb(194, 164, 122);
 }
 
 .main {
@@ -12,6 +11,13 @@ header {
   margin-top: 0px;
 }
 
+.main li {
+  margin-top: 5%;
+}
+
+ul {
+  padding-inline-start: 0;
+}
 
 header a {
   color: black;
@@ -21,6 +27,7 @@ header a {
 h1 {
   font-size: 26pt;
   font-family: "Raleway", sans-serif;
+  border-bottom: solid rgb(194, 164, 122);
 }
 
 .head {
@@ -61,7 +68,7 @@ a {
 
 .container h3 {
   position: absolute;
-  
+  border-bottom:  solid rgb(194, 164, 122);
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -74,8 +81,7 @@ a {
   transform: translate(-50%, -50%);
   color: white;
   padding: 30px;
-  border-top:  solid rgb(194, 164, 122);
-  border-bottom:  solid rgb(194, 164, 122);
+ 
 }
 
 .main li {
@@ -99,11 +105,16 @@ footer {
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 33% 33% 33% 33%;
   margin-top: 2%;
-  border-top: solid rgb(194, 164, 122);
+  border-top:  solid rgb(194, 164, 122);
+ 
 }
 
 footer h3 {
   font-family: "raleway", sans-serif;
+}
+
+footer ul {
+  margin-left: 3%;
 }
 
 .café {
@@ -129,16 +140,32 @@ footer h3 {
   display: flex;
   align-items: center;
   grid-column-start: 3;
-  grid-row-start: 2;
+  grid-row-start: 3;
+  justify-content: center;
 }
+
 
 @media (max-width: 768px) {
   .main {
     display: none;
   }
 
+
+  .Icon {
+   font-size: 26pt;
+  }
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 20px;
+}
+
   .main.toggleCls {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .social-media {
@@ -163,6 +190,11 @@ footer h3 {
     grid-column-start: 1;
     grid-row-start: 5;
   }
+
+.container {
+  font-size: 24pt;
+}
+
 }
 
 @media (min-width: 769px) {

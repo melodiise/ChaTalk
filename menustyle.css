@@ -1,15 +1,18 @@
 header {
   display: flex;
-  align-items: center;
+align-items: center;
   position: relative;
   justify-content: space-between;
   margin: 0 40px 0 40px;
-  border-bottom: solid rgb(194, 164, 122);
 }
 
 .main {
   display: flex;
 
+}
+
+ul {
+  padding-inline-start: 0;
 }
 
 header a {
@@ -20,7 +23,9 @@ header a {
 h1 {
   font-size: 26pt;
   font-family: "Raleway", sans-serif;
+  border-bottom: solid rgb(194, 164, 122);
 }
+
 
 .head {
   margin: 0 30px 0 30px;
@@ -39,7 +44,9 @@ h2 {
   justify-content: center;
   margin-top: 6%;
   font-family: "Raleway", sans-serif;
+  
 }
+
 
 section {
   display: grid;
@@ -136,6 +143,10 @@ footer h3 {
   font-family: "raleway", sans-serif;
 }
 
+footer ul {
+  margin-left: 3%;
+}
+
 .café {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -208,19 +219,39 @@ footer h3 {
 }
 
 @media (max-width: 768px) {
+
+h2 {
+  justify-content: flex-start;
+  border-bottom: solid rgb(194, 164, 122);
+}
+
   .main {
     display: none;
   }
 
-  .main.toggleCls {
-    display: block;
+  .main li {
+    margin-top: 18%;
   }
 
+  .main.toggleCls {
+    display: flex;
+    flex-direction: column;
+  }
   .social-media {
     grid-column-start: 1;
     grid-row-start: 4;
   }
 
+  header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 20px;
+}
+
+  .Icon {
+    font-size: 26pt;
+   }
 
   .menu1 {
     grid-column-start: 1;
@@ -246,6 +277,12 @@ footer h3 {
     grid-column-end: 7;
     border: solid rgb(194, 164, 122);
   }
+
+
+  h2 {
+    font-size: 24pt;
+  }
+
 }
 
 @media (max-width: 550px) {
@@ -266,24 +303,11 @@ footer h3 {
   }
 
  
-
   section li {
     font-size: 12pt;
   }
 
-  .menu1{
-    align-items: start;
-  }
 
-  .menu2{
-    align-items: start;
-  }
-  .menu3{
-    align-items: start;
-  }
-   .menu4{
-    align-items: start;
-  }
 }
 
 @media (max-width: 500px) {
@@ -301,6 +325,21 @@ section img {
 
 }
 
+@media (max-width: 380px) {
+
+  section img {
+    height: 50px;
+  }
+   
+section h3 {
+  font-size: 14pt;
+}
+
+  section li {
+    font-size: 7.5pt;
+  }
+
+}
 
 
 @media (min-width: 769px) {
