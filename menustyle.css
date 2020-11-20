@@ -1,6 +1,6 @@
 header {
   display: flex;
-align-items: center;
+  align-items: center;
   position: relative;
   justify-content: space-between;
   margin: 0 40px 0 40px;
@@ -8,8 +8,11 @@ align-items: center;
 
 .main {
   display: flex;
-
+  margin-top: 0px;
 }
+
+
+
 
 ul {
   padding-inline-start: 0;
@@ -26,40 +29,55 @@ h1 {
   border-bottom: solid rgb(194, 164, 122);
 }
 
+.main {
+  margin-top: 10%;
 
-.head {
+}
+
+.head, .order {
   margin: 0 30px 0 30px;
   font-size: 13.5pt;
   list-style: none;
   max-width: 100%;
 }
 
+.order {
+  margin: -15px 15px -15px 15px;
+  padding: 15px;
+  border: solid rgb(127, 142, 155);
+}
+
 a {
   text-decoration: none;
 }
 
-h2 {
-  font-size: 26pt;
+.title {
   display: flex;
   justify-content: center;
+}
+
+h2 {
+  font-size: 26pt;
+  
   margin-top: 6%;
   font-family: "Raleway", sans-serif;
-  
+  border-bottom: solid rgb(194, 164, 122);
+  width: fit-content
 }
 
 
-section {
+main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto;
   font-family: "Raleway", sans-serif;
 }
 
-section h3 {
+main h3 {
   font-size: 18pt;
 }
 
-section li {
+main li {
   margin: 15px 0px 15px 0px;
   font-size: 13.5pt;
   list-style: none;
@@ -67,12 +85,12 @@ section li {
 }
 
 .menu1 {
-  display: flex;
+  display: flex;  
   flex-direction: column;
   grid-row-start: 1;
   grid-column-start: 2;
   grid-column-end: 4;
-  border: solid rgb(194, 164, 122);
+
   align-items: center;
 }
 
@@ -87,9 +105,6 @@ section li {
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 2;
-  border-top: solid rgb(194, 164, 122);
-  border-right: solid rgb(194, 164, 122);
-  border-bottom: solid rgb(194, 164, 122);
   align-items: center;
 }
 
@@ -99,7 +114,7 @@ section li {
   grid-column-start: 2;
   grid-row-start: 2;
   grid-column-end: 4;
-  border: solid rgb(194, 164, 122);
+
   align-items: center;
 }
 
@@ -109,9 +124,6 @@ section li {
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 1;
-  border-top: solid rgb(194, 164, 122);
-  border-right: solid rgb(194, 164, 122);
-  border-bottom: solid rgb(194, 164, 122);
   align-items: center;
 }
 
@@ -135,17 +147,33 @@ footer {
   position: relative;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 33% 33% 33% 33%;
-  border-top: solid rgb(194, 164, 122);
+
   margin-top: 2%;
 }
 
 footer h3 {
   font-family: "raleway", sans-serif;
+    border-bottom: solid rgb(194, 164, 122);
+   width: fit-content;
 }
 
 footer ul {
   margin-left: 3%;
 }
+
+
+.return {
+  font-size: 50px;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  display: flex;
+  justify-content: flex-end;
+
+ }
+
+ .return a {
+  color: rgb(127, 142, 155);
+ }
 
 .café {
   grid-column-start: 1;
@@ -173,6 +201,22 @@ footer ul {
   grid-row-start: 2;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(127, 142, 155);
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background:  rgb(77, 86, 95);
+  }
+
+
 @media (max-width: 1500px) {
   .menu1 {
     grid-column-start: 1;
@@ -195,26 +239,30 @@ footer ul {
   .menu1 {
     grid-column-start: 2;
     grid-column-end: 6;
+  
+    border-right: none;
   }
 
   .menu4 {
     grid-row-start: 2;
     grid-column-start: 2;
     grid-column-end: 6;
-    border: solid rgb(194, 164, 122);
+   
   }
 
   .menu2 {
     grid-row-start: 3;
     grid-column-start: 2;
     grid-column-end: 6;
+   
+     border-right: none;
   }
 
   .menu3 {
     grid-row-start: 4;
     grid-column-start: 2;
     grid-column-end: 6;
-    border: solid rgb(194, 164, 122);
+
   }
 }
 
@@ -222,7 +270,7 @@ footer ul {
 
 h2 {
   justify-content: flex-start;
-  border-bottom: solid rgb(194, 164, 122);
+  
 }
 
   .main {
@@ -230,8 +278,9 @@ h2 {
   }
 
   .main li {
-    margin-top: 18%;
+    margin-top: 20%;
   }
+
 
   .main.toggleCls {
     display: flex;
@@ -262,7 +311,7 @@ h2 {
     grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: 7;
-    border: solid rgb(194, 164, 122);
+  
   }
 
   .menu2 {
@@ -275,7 +324,7 @@ h2 {
     grid-row-start: 4;
     grid-column-start: 1;
     grid-column-end: 7;
-    border: solid rgb(194, 164, 122);
+  
   }
 
 
@@ -304,22 +353,22 @@ h2 {
 
  
   section li {
-    font-size: 12pt;
+    font-size: 13pt;
   }
 
 
 }
 
 @media (max-width: 500px) {
-  section li {
-    font-size: 10pt;
+  main li {
+    font-size: 10.8pt;
   }
   
- section h3 {
+  main h3 {
     font-size: 15pt;
   }
 
-section img {
+  main img {
  height: 60px;
 }
 
@@ -327,21 +376,28 @@ section img {
 
 @media (max-width: 380px) {
 
-  section img {
+  main  img {
     height: 50px;
   }
    
-section h3 {
+  main h3 {
   font-size: 14pt;
 }
 
-  section li {
-    font-size: 7.5pt;
+main li {
+    font-size:8pt;
   }
 
 }
 
-
+@media (max-width: 295px) {
+ main h3 {
+    font-size: 13pt;
+  }
+main li {
+    font-size:7.6pt;
+  }
+}
 @media (min-width: 769px) {
   .Icon {
     display: none;

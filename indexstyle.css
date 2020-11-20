@@ -1,6 +1,6 @@
 header {
   display: flex;
-  text-align: center;
+  align-items: center;
   position: relative;
   justify-content: space-between;
   margin: 0 40px 0 40px;
@@ -11,12 +11,12 @@ header {
   margin-top: 0px;
 }
 
-.main li {
-  margin-top: 5%;
-}
+
+
 
 ul {
   padding-inline-start: 0;
+  
 }
 
 header a {
@@ -30,11 +30,27 @@ h1 {
   border-bottom: solid rgb(194, 164, 122);
 }
 
-.head {
+
+h4{
+  background-color: rgb(127, 142, 155);
+}
+
+.main {
+  margin-top: 10%;
+}
+
+.head, .order {
   margin: 0 30px 0 30px;
   font-size: 13.5pt;
   list-style: none;
   max-width: 100%;
+
+}
+
+.order {
+  margin: -15px 15px -15px 15px;
+  padding: 15px;
+  border: solid rgb(127, 142, 155);
 }
 
 a {
@@ -84,10 +100,6 @@ a {
  
 }
 
-.main li {
-  margin-top: 10%;
-}
-
 h2 {
   margin: 5px;
 }
@@ -105,13 +117,28 @@ footer {
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 33% 33% 33% 33%;
   margin-top: 2%;
-  border-top:  solid rgb(194, 164, 122);
- 
 }
 
 footer h3 {
   font-family: "raleway", sans-serif;
+   border-bottom: solid rgb(194, 164, 122);
+   width: fit-content;
 }
+
+
+.return {
+  font-size: 50px;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  display: flex;
+  justify-content: flex-end;
+
+  
+ }
+
+ .return a {
+  color:  rgb(127, 142, 155);
+ }
 
 footer ul {
   margin-left: 3%;
@@ -140,16 +167,126 @@ footer ul {
   display: flex;
   align-items: center;
   grid-column-start: 3;
-  grid-row-start: 3;
-  justify-content: center;
+  grid-row-start: 2;
+  justify-content: start;
 }
 
+h5 {
+  font-size: 26pt;
+  width: fit-content;
+  margin-top: 6%;
+  font-family: "Raleway", sans-serif;
+  border-bottom: solid rgb(194, 164, 122);
+ 
+  }
+
+.title {
+  display: flex;
+    justify-content: center;
+}
+  
+  h6 {
+    font-size: 18pt;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  p {
+    font-family: "Nunito", sans-serif;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows:  33% 33% 33%;
+  }
+  
+  
+  main img {
+    height: 200px;
+
+  }
+  
+.boba {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+  .taro {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+
+  
+  .fruit {
+    grid-column-start: 4;
+    grid-row-start: 3;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  .first-pargraph {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  
+  }
+  .second-paragraph {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+  }
+  
+  .third-paragraph {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+      background: rgb(127, 142, 155);
+      border-radius: 5px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background:  rgb(77, 86, 95);
+    }
+
+
+  @media (max-width: 1500px) {
+
+    .taro {
+      margin-left: 20px;
+    }
+  }
+
+@media (max-width: 1050px) {
+
+
+  .taro {
+    grid-column-start: 1;
+    margin-left: 140px;
+}
+}
 
 @media (max-width: 768px) {
   .main {
     display: none;
   }
 
+  .main li {
+    margin-top: 20%;
+  }
 
   .Icon {
    font-size: 26pt;
@@ -172,6 +309,24 @@ header {
     grid-column-start: 1;
     grid-row-start: 4;
   }
+
+.boba, .fruit {
+  margin-top: 80px;
+}
+
+
+.taro {
+  margin-left: 70px;
+  margin-top: 80px;
+} 
+
+
+}
+
+@media (max-width: 660px) {
+  .taro {
+    margin-left: 50px;
+}
 }
 
 @media (max-width: 550px) {
@@ -195,7 +350,51 @@ header {
   font-size: 24pt;
 }
 
+ .first-pargraph {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-left: 10px;
+  }
+  .second-paragraph {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-left: 10px;
+  }
+  
+  .third-paragraph {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    margin-left: 10px;
+  }
+
+
+.taro {
+  grid-column-start: 4;
+  margin-left: 20px;
 }
+
+.boba, .fruit  {
+  -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+}
+
+
+
+@media (max-width: 425px) {
+
+.fruit, .boba, .taro {
+  height: 140px;
+  margin-top: 150px;
+}
+
+}
+
 
 @media (min-width: 769px) {
   .Icon {
@@ -203,3 +402,4 @@ header {
   }
 
 }
+
