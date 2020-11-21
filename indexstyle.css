@@ -52,6 +52,7 @@ a {
   text-decoration: none;
 }
 
+
 .container img {
   margin-top: 2%;
   position: relative;
@@ -110,6 +111,7 @@ footer {
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 33% 33% 33% 33%;
   margin-top: 2%;
+  
 }
 
 footer h3 {
@@ -117,6 +119,10 @@ footer h3 {
   border-bottom: solid rgb(194, 164, 122);
   width: fit-content;
 }
+
+li { 
+  list-style-type: none;
+ }
 
 .return {
   font-size: 50px;
