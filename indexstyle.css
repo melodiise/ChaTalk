@@ -45,7 +45,7 @@ h4 {
 .order {
   margin: -15px 15px -15px 15px;
   padding: 15px;
-  border: solid rgb(130, 127, 155);
+  border: solid rgb(132, 151, 173);
 }
 
 a {
@@ -269,7 +269,7 @@ main img {
     margin-top: 20%;
   }
 
-  .Icon {
+  .icon {
     font-size: 26pt;
   }
 
@@ -404,7 +404,7 @@ main img {
 }
 
 @media (min-width: 769px) {
-  .Icon {
+  .icon {
     display: none;
   }
 }

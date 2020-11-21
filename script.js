@@ -3,6 +3,6 @@ function toggleClass() {
     menu.classList.toggle("toggleCls");
 }
 
-let hamburger = document.querySelector(".Icon");
+let hamburger = document.querySelector(".icon");
 
 hamburger.addEventListener ("click", toggleClass);
